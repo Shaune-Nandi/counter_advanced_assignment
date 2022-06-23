@@ -12,29 +12,37 @@
     <h1>Coin Toss Game</h1>
     <h4>Rules:</h4>
     <p>
-      1. select either 'heads' or 'tails' below.<br>
+      1. Sselect either 'heads' or 'tails' below.<br>
       2. Click on Play.<br>
     </p>
     <hr>
-      <label for="cars">Select one:</label>
-      <select name="coin_option" id="coin_option">
-        <option value="none">Select</option>
-        <option value="heads">Heads</option>
-        <option value="tails">Tails</option>
-      </select>
-      <br><br>
+      <label for="cars">Select one:</label> <br>
 
+      <input type="radio" name="coin_option" id="heads" value="heads">
+      <label for="html">Heads</label><br>
+
+      <input type="radio" name="coin_option" id="tails" value="tails">
+      <label for="css">Tails</label>
+      <p id="display_text"></p>
+
+      <p id="selection"></p>
+      <p><span><strong id="remaining_rounds">5</strong></span> rounds remaining</p>
       <button id="play_btn">Play</button>
-    
+    <hr>
+
       <div class="display-container">
-        <h2 id="display-heading"></h2>
-        <h1 id="number-indicator">0</h1>
+        <h3>Result: <span id="result"></span></h3>
+        <div id="image"></div>
+
+        <div>
+          Your score: <span id="your_score">0 </span><br>
+          Computer score: <span id="computer_score">0</span>
+        </div>
+
+        
       </div>
     
-    <div style="display:flex ;">
-    <img id="heads" class="img-thumbnail" src="./assets/images/head-side.png" alt="heads"><br> Heads <br>
-    <img id="tails" class="img-thumbnail" src="./assets/images/tail-side.png" alt="tails"><br> Tails
-    </div>
+
   </div>
   <script src="./assets/main.js"></script>
 </body>
