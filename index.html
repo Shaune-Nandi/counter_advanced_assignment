@@ -3,27 +3,37 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>DAM Assignment_2 Advanced</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./assets/styles.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
-  <div class="container">
-    <div class="button-container">
-      <button id="plusFive">+5</button>
-      <br />
-      <br />
-      <button id="plusTen">+10</button>
-      <br />
-      <br />
-      <button id="plusFifteen">+15</button>
-      <br />
-      <br />
-      <button id="plusTwenty">+20</button>
-    </div>
-    <div class="display-container">
-      <h2 id="display-heading"></h2>
-      <h1 id="number-indicator">0</h1>
+  <div class="container bg-light">
+    <h1>Coin Toss Game</h1>
+    <h4>Rules:</h4>
+    <p>
+      1. select either 'heads' or 'tails' below.<br>
+      2. Click on Play.<br>
+    </p>
+    <hr>
+      <label for="cars">Select one:</label>
+      <select name="coin_option" id="coin_option">
+        <option value="none">Select</option>
+        <option value="heads">Heads</option>
+        <option value="tails">Tails</option>
+      </select>
+      <br><br>
+
+      <button id="play_btn">Play</button>
+    
+      <div class="display-container">
+        <h2 id="display-heading"></h2>
+        <h1 id="number-indicator">0</h1>
+      </div>
+    
+    <div style="display:flex ;">
+    <img id="heads" class="img-thumbnail" src="./assets/images/head-side.png" alt="heads"><br> Heads <br>
+    <img id="tails" class="img-thumbnail" src="./assets/images/tail-side.png" alt="tails"><br> Tails
     </div>
   </div>
   <script src="./assets/main.js"></script>
